@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class Verify_Newsletter {
 
 	@Test
-	public void newsletter_test(){
+	public void newsletter_test() throws InterruptedException{
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 			
@@ -19,6 +19,8 @@ public class Verify_Newsletter {
 		newsletter.sendKeys("imran@automation.com");
 		WebElement subscribe = driver.findElement(By.xpath("/html/body/div[8]/div[1]/div/div/div[4]/ul/form/button"));
 		subscribe.click();
+		Thread.sleep(2000);
+		driver.close();
 	
 	}
 }

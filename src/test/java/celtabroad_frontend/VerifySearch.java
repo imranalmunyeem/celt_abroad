@@ -20,6 +20,8 @@ public class VerifySearch {
 	    search.sendKeys("testing blog");
 	    driver.findElementByXPath("//*[@id=\"main-menu\"]/div/div/div/nav/div/div[1]/form/button/i").click();
 		Thread.sleep(2000);
+		
+		driver.close();
 
 		
 		

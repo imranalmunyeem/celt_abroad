@@ -16,14 +16,20 @@ public class Verify_FollowUS {
 		
 		driver.findElementByXPath("/html/body/div[8]/div[1]/div/div/div[3]/ul/li[1]").click();
 		//Facebook
-		WebElement facebook = driver.findElement(By.xpath("/html/body/div[3]/div[1]/div/div/div[3]/ul/li[2]/a[1]/img"));
+		WebElement facebook = driver.findElement(By.xpath("/html/body/div[8]/div[1]/div/div/div[3]/ul/li[2]/a[1]/img"));
 		facebook.click();
 		
 		//Instagram
+		WebElement instagram = driver.findElement(By.xpath("/html/body/div[8]/div[1]/div/div/div[3]/ul/li[2]/a[2]/img"));
+		instagram.click();
 		
 		//Twitter
+		WebElement twitter = driver.findElement(By.xpath("/html/body/div[8]/div[1]/div/div/div[3]/ul/li[2]/a[3]/img"));
+		twitter.click();
 		
 		//Linkedin
+		WebElement linkedin = driver.findElement(By.xpath("/html/body/div[8]/div[1]/div/div/div[3]/ul/li[2]/a[4]/img"));
+		linkedin.click();
 		
 	}
 }

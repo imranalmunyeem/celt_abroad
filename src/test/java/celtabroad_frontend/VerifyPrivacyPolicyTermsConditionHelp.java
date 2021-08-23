@@ -27,5 +27,7 @@ public class VerifyPrivacyPolicyTermsConditionHelp {
 		//Help
 		driver.findElementByXPath("/html/body/div[8]/div[2]/div/div/div/div[1]/a[3]").click();
 		Thread.sleep(2000);
+		
+		driver.close();
 	}
 }

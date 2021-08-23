@@ -27,6 +27,7 @@ public class VerifySignUp {
 		driver.findElementByXPath("//*[@id=\"registerSubmit2\"]").click();
 		driver.findElement(By.id("signup_otp")).sendKeys("1234");
 		driver.findElementByXPath("//*[@id=\"check_otp\"]").click();
+		driver.close();
 		
 		
 		
