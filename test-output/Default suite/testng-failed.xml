@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="applications_backend.Status_Buttons_Applications">
+      <class name="blog_backend.Entries_Blog">
         <methods>
-          <include name="status_buttons_test"/>
+          <include name="entries_test_blog"/>
         </methods>
-      </class> <!-- applications_backend.Status_Buttons_Applications -->
+      </class> <!-- blog_backend.Entries_Blog -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
