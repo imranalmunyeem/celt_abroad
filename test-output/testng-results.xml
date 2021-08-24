@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-23T18:17:28 BDT" name="Default suite" finished-at="2021-08-23T18:17:38 BDT" duration-ms="10109">
+  <suite started-at="2021-08-24T18:48:02 BDT" name="Default suite" finished-at="2021-08-24T18:48:22 BDT" duration-ms="19785">
     <groups>
     </groups>
-    <test started-at="2021-08-23T18:17:28 BDT" name="Default test" finished-at="2021-08-23T18:17:38 BDT" duration-ms="10109">
-      <class name="celtabroad_backend.Verify_login">
-        <test-method signature="login_test()[pri:1, instance:celtabroad_backend.Verify_login@54a7079e]" started-at="2021-08-23T18:17:28 BDT" name="login_test" description="it will check the login functionality" finished-at="2021-08-23T18:17:38 BDT" duration-ms="10076" status="PASS">
+    <test started-at="2021-08-24T18:48:02 BDT" name="Default test" finished-at="2021-08-24T18:48:22 BDT" duration-ms="19785">
+      <class name="applications_backend.Status_Buttons_Applications">
+        <test-method signature="status_buttons_test()[pri:0, instance:applications_backend.Status_Buttons_Applications@72e5a8e]" started-at="2021-08-24T18:48:02 BDT" name="status_buttons_test" finished-at="2021-08-24T18:48:22 BDT" duration-ms="19753" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login_test -->
-      </class> <!-- celtabroad_backend.Verify_login -->
+        </test-method> <!-- status_buttons_test -->
+      </class> <!-- applications_backend.Status_Buttons_Applications -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

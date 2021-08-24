@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="celtabroad_backend.VerifyForgotPassword">
+      <class name="applications_backend.Status_Buttons_Applications">
         <methods>
-          <include name="forgotpassword_test"/>
+          <include name="status_buttons_test"/>
         </methods>
-      </class> <!-- celtabroad_backend.VerifyForgotPassword -->
+      </class> <!-- applications_backend.Status_Buttons_Applications -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
