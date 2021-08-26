@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class VerifyCeltAbroadLogo {
 	
 	@Test
-	public void celtabroad_logo_test() throws InterruptedException {
+	public void LogoTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		

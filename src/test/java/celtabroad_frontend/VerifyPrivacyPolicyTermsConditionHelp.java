@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class VerifyPrivacyPolicyTermsConditionHelp {
 
 	@Test
-	public void privacypolicy_termscondition_help_test() throws InterruptedException {
+	public void PrivacyPolicyTermsConditionHelpTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 			

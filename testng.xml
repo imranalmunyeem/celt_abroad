@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="system_settings_backend.VerifyLocaleSearch"/>
+      <class name="general_settings_backend.VerifySearchCountries"/>
+      <class name="university_settings_backend.VerifyPreviousNextInstitutions"/>
+      <class name="blog_backend.SearchBlog"/>
+      <class name="celtabroad_frontend.VerifyLanguage"/>
+      <class name="university_settings_backend.VerifyAddUniversityRepresentatives"/>
+      <class name="user_authentication_backend.VerifyCheckboxofLogin"/>
+      <class name="university_settings_backend.VerifySearchProgram"/>
+      <class name="applications_backend.StatusButtonsApplications"/>
+      <class name="university_settings_backend.VerifyPreviousNextUniversityRepresentatives"/>
+      <class name="dashboard_backend.VerifyDashboard"/>
+      <class name="system_settings_backend.VerifyCurrenciesSearch"/>
+      <class name="celtabroad_frontend.VerifyLoginwithSocialMedia"/>
+      <class name="university_settings_backend.VerifyEntriesStudent"/>
+      <class name="system_settings_backend.VerifyCurrenciesActions"/>
+      <class name="university_settings_backend.VerifyActionUniversityRepresentative"/>
+      <class name="system_settings_backend.Verifylocaleentries"/>
+      <class name="university_settings_backend.VerifyActionsInstitutions"/>
+      <class name="user_authentication_backend.Verifylogin"/>
+      <class name="general_settings_backend.VerifyEntriesRegion"/>
+      <class name="university_settings_backend.VerifySearchStudent"/>
+      <class name="applications_backend.SearchApplications"/>
+      <class name="general_settings_backend.VerifyActionLanguage"/>
+      <class name="base_class.BaseTest"/>
+      <class name="logo_backend.VerifyCeltAbroadLogo"/>
+      <class name="general_settings_backend.VerifyEntriesCountry"/>
+      <class name="celtabroad_frontend.VerifySignUp"/>
+      <class name="system_settings_backend.VerifyCurrenciesEntries"/>
+      <class name="system_settings_backend.VerifyCurrenciesAdd"/>
+      <class name="university_settings_backend.VerifyFeaturedActiveInstitutions"/>
+      <class name="celtabroad_frontend.VerifyPrivacyPolicyTermsConditionHelp"/>
+      <class name="blog_backend.AddBlog"/>
+      <class name="university_settings_backend.VerifyPreviousNextStudent"/>
+      <class name="university_settings_backend.VerifyStatusStudent"/>
+      <class name="system_settings_backend.VerifyLocaleAction"/>
+      <class name="user_authentication_backend.VerifyLogout"/>
+      <class name="menubutton_backend.VerifyHeaderMenuButton"/>
+      <class name="newsletter_backend.VerifyPreviousAndNext"/>
+      <class name="university_settings_backend.VerifySearchInstitutions"/>
+      <class name="celtabroad_frontend.VerifyNewsletter"/>
+      <class name="general_settings_backend.VerifySearchRegions"/>
+      <class name="blog_backend.ActionBlog"/>
+      <class name="university_settings_backend.VerifySearchUniversityRepresentatives"/>
+      <class name="celtabroad_frontend.VerifyCeltAbroadLogo"/>
+      <class name="university_settings_backend.VerifyActionsStudent"/>
+      <class name="celtabroad_frontend.VerifySearch"/>
+      <class name="celtabroad_frontend.VerifyFollowUS"/>
+      <class name="general_settings_backend.VerifySearchLanguage"/>
+      <class name="title_backend.VerifyTitle"/>
+      <class name="general_settings_backend.VerifyActionRegion"/>
+      <class name="newsletter_backend.VerifySearch"/>
+      <class name="user_authentication_backend.VerifyForgotPassword"/>
+      <class name="university_settings_backend.VerifyPreviousNextPrograms"/>
+      <class name="university_settings_backend.VerifyFeaturedActivePrograms"/>
+      <class name="university_settings_backend.VerifyActionsProgram"/>
+      <class name="general_settings_backend.VerifyAddRegions"/>
+      <class name="general_settings_backend.VerifyEntriesLanguages"/>
+      <class name="blog_backend.EntriesBlog"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

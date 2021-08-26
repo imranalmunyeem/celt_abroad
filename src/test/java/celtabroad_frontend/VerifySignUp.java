@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class VerifySignUp {
 	
 	@Test
-	public void signup_test() throws InterruptedException {
+	public void SignupTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		

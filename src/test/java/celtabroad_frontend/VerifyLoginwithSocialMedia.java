@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class VerifyLoginwithSocialMedia {
 
 	@Test
-	public void login_with_social_mediatest() throws InterruptedException {
+	public void LoginWithSocialMediaTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		

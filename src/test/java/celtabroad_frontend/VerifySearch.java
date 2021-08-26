@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class VerifySearch {
 
 	@Test
-	public void search_test() throws InterruptedException {
+	public void SearchTest() throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class VerifyLanguage {
 	
 	@Test
-	public void language_test() throws InterruptedException {
+	public void LanguageTest() throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
