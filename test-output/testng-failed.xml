@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="blog_backend.SearchBlog">
+      <class name="general_settings_backend.VerifyActionState">
         <methods>
-          <include name="SearchTest"/>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="ActionTest"/>
         </methods>
-      </class> <!-- blog_backend.SearchBlog -->
+      </class> <!-- general_settings_backend.VerifyActionState -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
