@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="general_settings_backend.VerifyActionState">
+      <class name="general_settings_backend.VerifyActionsEducationlevels">
         <methods>
-          <include name="ActionTest"/>
+          <include name="ActionsTest"/>
         </methods>
-      </class> <!-- general_settings_backend.VerifyActionState -->
+      </class> <!-- general_settings_backend.VerifyActionsEducationlevels -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
