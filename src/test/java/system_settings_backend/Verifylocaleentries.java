@@ -1,15 +1,14 @@
 package system_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Verifylocaleentries {
+import base_class.DriverSetup;
+
+public class Verifylocaleentries extends DriverSetup {
 	
 	@Test
 	public void LocaleEntriesTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();
 		
@@ -53,22 +52,22 @@ public class Verifylocaleentries {
 		//Entry List
 		
 		//10
-		driver.findElementByXPath("//*[@id=\"localedatatable-table_length\"]/label/select/option[1]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"localedatatable-table_length\\\"]/label/select/option[1]")).click();
 		entries.click();
 		Thread.sleep(2000);
 		
 		//25
-		driver.findElementByXPath("//*[@id=\"localedatatable-table_length\"]/label/select/option[2]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"localedatatable-table_length\\\"]/label/select/option[2]")).click();
 		entries.click();
 		Thread.sleep(2000);
 		
 		//50
-		driver.findElementByXPath("//*[@id=\"localedatatable-table_length\"]/label/select/option[3]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"localedatatable-table_length\\\"]/label/select/option[3]")).click();
 		entries.click();
 		Thread.sleep(2000);
 		
 		//100
-		driver.findElementByXPath("//*[@id=\"localedatatable-table_length\"]/label/select/option[4]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"localedatatable-table_length\\\"]/label/select/option[4]")).click();
 		Thread.sleep(2000);
 		
 		driver.close();

@@ -1,17 +1,14 @@
 package user_authentication_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import base_class.DriverSetup;
 
 
-public class VerifyCheckboxofLogin {
+public class VerifyCheckboxofLogin extends DriverSetup {
 
 		@Test
 		public void CheckboxTest() throws InterruptedException {
-			
-			System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-			ChromeDriver driver = new ChromeDriver();
 				
 			driver.get("https://celtabroad.com/admin/login");
 			driver.manage().window().maximize();

@@ -1,16 +1,13 @@
 package general_settings_backend;
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyDeleteCountrywiseEducation {
+import base_class.DriverSetup;
+
+public class VerifyDeleteCountrywiseEducation extends DriverSetup {
 	@Test
 	public void DeleteTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="title_backend.VerifyTitle">
+      <class name="blog_backend.EntriesBlog">
         <methods>
-          <include name="close"/>
-          <include name="setDriver"/>
-          <include name="TitleTest"/>
+          <include name="EntriesTest"/>
         </methods>
-      </class> <!-- title_backend.VerifyTitle -->
+      </class> <!-- blog_backend.EntriesBlog -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

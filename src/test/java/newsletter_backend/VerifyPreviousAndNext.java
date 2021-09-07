@@ -1,16 +1,14 @@
 package newsletter_backend;
 import org.openqa.selenium.By;
-//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyPreviousAndNext {
+import base_class.DriverSetup;
+
+public class VerifyPreviousAndNext extends DriverSetup {
 	@Test
 	public void PreviousNextTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
+	
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();
 		
@@ -42,8 +40,6 @@ public class VerifyPreviousAndNext {
 		//Previous and Next 
 		WebElement next = driver.findElement(By.xpath("//*[@id=\"newsletterdatatable-table_next\"]/a"));
 		next.click();
-//		// Scrolling down the page till the element is found		
-//				js.executeScript("arguments[0].scrollIntoView();",next);
 		Thread.sleep(2000);
 		
 		WebElement previous = driver.findElement(By.xpath("//*[@id=\"newsletterdatatable-table_previous\"]"));

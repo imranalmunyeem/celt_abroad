@@ -1,17 +1,17 @@
 package system_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import base_class.DriverSetup;
 
 
-public class VerifyCurrenciesEntries {
+
+public class VerifyCurrenciesEntries extends DriverSetup {
 	
 	@Test
 	public void CurrenciesEntriesTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
+	
 		driver.get("https://celtabroad.com/admin/login");
 	driver.manage().window().maximize();
 		
@@ -57,22 +57,22 @@ public class VerifyCurrenciesEntries {
 		//Entry List
 		
 		//10
-		driver.findElementByXPath("//*[@id=\"currency-table_length\"]/label/select/option[1]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"currency-table_length\\\"]/label/select/option[1]")).click();
 		entriesCurrencies.click();
 		Thread.sleep(1000);
 		
 		//25
-		driver.findElementByXPath("//*[@id=\"currency-table_length\"]/label/select/option[2]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"currency-table_length\\\"]/label/select/option[2]")).click();
 		entriesCurrencies.click();
 		Thread.sleep(1000);
 		
 		//50
-		driver.findElementByXPath("//*[@id=\"currency-table_length\"]/label/select/option[3]]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"currency-table_length\\\"]/label/select/option[3]]")).click();
 		entriesCurrencies.click();
 		Thread.sleep(1000);
 		
 		//100
-		driver.findElementByXPath("//*[@id=\"currency-table_length\"]/label/select/option[4]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"currency-table_length\\\"]/label/select/option[4]")).click();
 		entriesCurrencies.click();
 		Thread.sleep(1000);
 		

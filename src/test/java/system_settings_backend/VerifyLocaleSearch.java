@@ -1,16 +1,15 @@
 package system_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyLocaleSearch {
+import base_class.DriverSetup;
+
+public class VerifyLocaleSearch extends DriverSetup{
 	
 	@Test
 	public void LocaleSearchTest() throws InterruptedException {
 		
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();
 		

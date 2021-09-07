@@ -2,15 +2,14 @@ package general_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyAddStudyArea {
+import base_class.DriverSetup;
+
+public class VerifyAddStudyArea extends DriverSetup {
 	@Test
 	public void AddStudyAreaTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		
 		
@@ -70,7 +69,7 @@ public class VerifyAddStudyArea {
 		jse.executeScript("window.scrollBy(0,1500);");
 		Thread.sleep(1000);
 		
-		driver.findElementByXPath("//*[@id=\"tinymce\"]/p").sendKeys("Automation");
+		driver.findElement(By.xpath("//*[@id=\\\"tinymce\\\"]/p")).sendKeys("Automation");
 		Thread.sleep(1000);
 		
 //		//Select Exam Type

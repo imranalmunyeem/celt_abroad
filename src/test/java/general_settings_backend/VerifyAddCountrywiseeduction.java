@@ -1,16 +1,14 @@
 package general_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyAddCountrywiseeduction {
+import base_class.DriverSetup;
+
+public class VerifyAddCountrywiseeduction extends DriverSetup {
 	@Test
 	public void AddTestCountrywiseeducation() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		
 		
@@ -49,19 +47,19 @@ public class VerifyAddCountrywiseeduction {
 		//Add Residential Country
 		WebElement addResidentialCountry = driver.findElement(By.xpath("//*[@id=\"residential_country_id\"]"));
 		addResidentialCountry.click();
-		driver.findElementByXPath("//*[@id=\"residential_country_id\"]/option[3]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"residential_country_id\\\"]/option[3]"));
 		Thread.sleep(1000);
 		
 		//Add Destination Country
 		WebElement addDestinationCountry = driver.findElement(By.xpath("//*[@id=\"destination_country_id\"]"));
 		addDestinationCountry.click();
-		driver.findElementByXPath("//*[@id=\"destination_country_id\"]/option[2]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"destination_country_id\\\"]/option[2]"));
 		Thread.sleep(1000);
 		
 		//Add Degree Level
 		WebElement addDegreeLevel = driver.findElement(By.xpath("//*[@id=\"residential_degree_id\"]"));
 		addDegreeLevel.click();
-		driver.findElementByXPath("//*[@id=\"residential_degree_id\"]/option[4]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"residential_degree_id\\\"]/option[4]"));
 		Thread.sleep(1000);
 		
 		//Add 2nd Degree Level

@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyActionLanguage {
+import base_class.DriverSetup;
+
+public class VerifyActionLanguage extends DriverSetup {
 	@Test
 	public void ActionTestLanguage() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");

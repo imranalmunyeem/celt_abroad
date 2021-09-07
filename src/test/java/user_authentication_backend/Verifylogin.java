@@ -1,16 +1,15 @@
 package user_authentication_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import base_class.DriverSetup;
 
-public class Verifylogin {
+
+public class Verifylogin extends DriverSetup {
 	
 	@Test 
 	public void LoginTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();
 		

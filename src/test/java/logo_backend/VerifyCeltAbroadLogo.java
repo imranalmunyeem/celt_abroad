@@ -1,17 +1,15 @@
 package logo_backend;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyCeltAbroadLogo {
+import base_class.DriverSetup;
+
+public class VerifyCeltAbroadLogo extends DriverSetup{
 	
 	@Test
 	public void CeltAbroadLogoTest () throws InterruptedException{
 		
-			System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-			ChromeDriver driver = new ChromeDriver();
 			driver.get("https://celtabroad.com/admin/login");
 			driver.manage().window().maximize();
 			Thread.sleep(1000);
@@ -30,7 +28,7 @@ public class VerifyCeltAbroadLogo {
 			Thread.sleep(1000);
 			
 			//logo
-			WebElement logo = driver.findElementByXPath("//*[@id=\"wrapper\"]/div[2]/div/div[1]/div/div/a/img");
+			WebElement logo = driver.findElement(By.xpath("//*[@id=\\\"wrapper\\\"]/div[2]/div/div[1]/div/div/a/img"));
 			logo.click();
 			Thread.sleep(3000);
 			driver.close();

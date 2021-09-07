@@ -4,7 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class EntriesBlog {
+import base_class.DriverSetup;
+
+public class EntriesBlog extends DriverSetup{
 	@Test
 	public void EntriesTest() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");

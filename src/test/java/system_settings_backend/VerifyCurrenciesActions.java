@@ -1,16 +1,14 @@
 package system_settings_backend;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyCurrenciesActions {
+import base_class.DriverSetup;
+
+public class VerifyCurrenciesActions extends DriverSetup {
 	
 	@Test
 	public void CurrenciesActionTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();
 		

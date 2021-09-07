@@ -1,15 +1,13 @@
 package general_settings_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifySearchState {
+import base_class.DriverSetup;
+
+public class VerifySearchState extends DriverSetup{
 	@Test
 	public void SearchTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
 		
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		

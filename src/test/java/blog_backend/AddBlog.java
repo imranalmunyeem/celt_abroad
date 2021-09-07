@@ -2,17 +2,15 @@ package blog_backend;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class AddBlog {
+import base_class.DriverSetup;
+
+public class AddBlog extends DriverSetup {
 	@Test
 	public void AddTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		
-		
-		
+	
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		
 		
@@ -62,7 +60,8 @@ public class AddBlog {
 		WebElement blogCategory = driver.findElement(By.xpath("//*[@id=\"en[category_id]\"]"));
 		blogCategory.click();
 		Thread.sleep(2000);
-		driver.findElementByXPath("//*[@id=\"en[category_id]\"]/option[4]").click();
+		driver.findElement(By.xpath("//*[@id=\\\"en[category_id]\\\"]/option[4]")).click();
+		//driver.findElement("//*[@id=\"en[category_id]\"]/option[4]").click();
 		Thread.sleep(2000);
 		
 		

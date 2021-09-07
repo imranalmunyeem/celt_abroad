@@ -3,16 +3,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 //import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class VerifyActionState {
+import base_class.DriverSetup;
+
+public class VerifyActionState extends DriverSetup {
 	@Test
 	public void ActionTest() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		
 		
