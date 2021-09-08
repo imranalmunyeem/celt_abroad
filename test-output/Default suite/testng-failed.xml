@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="blog_backend.EntriesBlog">
+      <class name="general_settings_backend.VerifyActionLanguage">
         <methods>
-          <include name="EntriesTest"/>
+          <include name="close"/>
+          <include name="setDriver"/>
+          <include name="ActionTestLanguage"/>
         </methods>
-      </class> <!-- blog_backend.EntriesBlog -->
+      </class> <!-- general_settings_backend.VerifyActionLanguage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
