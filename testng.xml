@@ -1,38 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Celt Abroad">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="general_settings_backend.VerifyActionsEducationlevels"/>
+      <class name="general_settings_backend.VerifyAddStudyArea"/>
+      <class name="general_settings_backend.VerifyEntriesStudyArea"/>
+      <class name="general_settings_backend.VerifyActionsSession"/>
       <class name="system_settings_backend.VerifyLocaleSearch"/>
       <class name="general_settings_backend.VerifySearchCountries"/>
+      <class name="general_settings_backend.VerifyActionState"/>
       <class name="university_settings_backend.VerifyPreviousNextInstitutions"/>
       <class name="blog_backend.SearchBlog"/>
       <class name="celtabroad_frontend.VerifyLanguage"/>
       <class name="university_settings_backend.VerifyAddUniversityRepresentatives"/>
       <class name="user_authentication_backend.VerifyCheckboxofLogin"/>
+      <class name="general_settings_backend.VerifyAddCity"/>
       <class name="university_settings_backend.VerifySearchProgram"/>
+      <class name="general_settings_backend.VerifyAddSession"/>
       <class name="applications_backend.StatusButtonsApplications"/>
       <class name="university_settings_backend.VerifyPreviousNextUniversityRepresentatives"/>
+      <class name="general_settings_backend.VerifyEntriesDiscipline"/>
       <class name="dashboard_backend.VerifyDashboard"/>
+      <class name="general_settings_backend.VerifyDeleteCountrywiseEducation"/>
       <class name="system_settings_backend.VerifyCurrenciesSearch"/>
+      <class name="general_settings_backend.VerifySearchCity"/>
       <class name="celtabroad_frontend.VerifyLoginwithSocialMedia"/>
       <class name="university_settings_backend.VerifyEntriesStudent"/>
       <class name="system_settings_backend.VerifyCurrenciesActions"/>
+      <class name="general_settings_backend.VerifyAddDiscipline"/>
       <class name="university_settings_backend.VerifyActionUniversityRepresentative"/>
       <class name="system_settings_backend.Verifylocaleentries"/>
       <class name="university_settings_backend.VerifyActionsInstitutions"/>
       <class name="user_authentication_backend.Verifylogin"/>
       <class name="general_settings_backend.VerifyEntriesRegion"/>
+      <class name="general_settings_backend.VerifySearchStudyArea"/>
+      <class name="general_settings_backend.VerifySearchSession"/>
       <class name="university_settings_backend.VerifySearchStudent"/>
       <class name="applications_backend.SearchApplications"/>
       <class name="general_settings_backend.VerifyActionLanguage"/>
-      <class name="base_class.BaseTest"/>
+      <class name="utilities.Screenshots"/>
+      <class name="general_settings_backend.VerifyEntriesEducationLevels"/>
       <class name="logo_backend.VerifyCeltAbroadLogo"/>
       <class name="general_settings_backend.VerifyEntriesCountry"/>
       <class name="celtabroad_frontend.VerifySignUp"/>
       <class name="system_settings_backend.VerifyCurrenciesEntries"/>
       <class name="system_settings_backend.VerifyCurrenciesAdd"/>
+      <class name="general_settings_backend.VerifyPreviousNextCountrywiseeducation"/>
       <class name="university_settings_backend.VerifyFeaturedActiveInstitutions"/>
+      <class name="general_settings_backend.VerifyPreviousNextEducationLevel"/>
       <class name="celtabroad_frontend.VerifyPrivacyPolicyTermsConditionHelp"/>
       <class name="blog_backend.AddBlog"/>
       <class name="university_settings_backend.VerifyPreviousNextStudent"/>
@@ -49,18 +65,29 @@
       <class name="celtabroad_frontend.VerifyCeltAbroadLogo"/>
       <class name="university_settings_backend.VerifyActionsStudent"/>
       <class name="celtabroad_frontend.VerifySearch"/>
+      <class name="security_test.VerifyHTTPorHTTPS"/>
       <class name="celtabroad_frontend.VerifyFollowUS"/>
       <class name="general_settings_backend.VerifySearchLanguage"/>
+      <class name="general_settings_backend.VerifyActionsCity"/>
+      <class name="general_settings_backend.VerifySearchCountrywiseeducation"/>
       <class name="title_backend.VerifyTitle"/>
       <class name="general_settings_backend.VerifyActionRegion"/>
+      <class name="general_settings_backend.VerifySearchState"/>
       <class name="newsletter_backend.VerifySearch"/>
+      <class name="general_settings_backend.VerifyPreviousNextCity"/>
+      <class name="general_settings_backend.VerifyEntriesState"/>
+      <class name="general_settings_backend.VerifySearchEducationLevels"/>
+      <class name="general_settings_backend.VerifyAddCountrywiseeduction"/>
       <class name="user_authentication_backend.VerifyForgotPassword"/>
       <class name="university_settings_backend.VerifyPreviousNextPrograms"/>
       <class name="university_settings_backend.VerifyFeaturedActivePrograms"/>
+      <class name="general_settings_backend.VerifyAddEducatioLevels"/>
       <class name="university_settings_backend.VerifyActionsProgram"/>
+      <class name="general_settings_backend.VerifyEntriesSession"/>
       <class name="general_settings_backend.VerifyAddRegions"/>
       <class name="general_settings_backend.VerifyEntriesLanguages"/>
       <class name="blog_backend.EntriesBlog"/>
+      <class name="general_settings_backend.VerifyEntriesCity"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite> <!-- Celt Abroad -->

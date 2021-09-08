@@ -1,22 +1,13 @@
 package utilities;
 import org.openqa.selenium.By;
-import org.openqa.selenium.TakesScreenshot;
-//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import com.gargoylesoftware.htmlunit.javascript.host.file.File;
-import com.sun.jna.platform.FileUtils;
-public class Screenshots {
+import base_class.DriverSetup;
+public class Screenshots extends DriverSetup {
 	@Test
 	public void ScreenshotFailedCases() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","C:\\Webdrivers\\chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		
+
 		driver.get("https://celtabroad.com/admin/login");
 		driver.manage().window().maximize();		
 		
