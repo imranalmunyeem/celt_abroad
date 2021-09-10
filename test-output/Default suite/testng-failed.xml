@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="general_settings_backend.VerifyActionLanguage">
+      <class name="exceloperation.ReadingExcel">
         <methods>
+          <include name="ReadExcel"/>
           <include name="close"/>
           <include name="setDriver"/>
-          <include name="ActionTestLanguage"/>
         </methods>
-      </class> <!-- general_settings_backend.VerifyActionLanguage -->
+      </class> <!-- exceloperation.ReadingExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
